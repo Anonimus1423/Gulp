@@ -1,5 +1,14 @@
 @import "fonts";
 
 body {
-	background-color: #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #eee;
+	background-color: #222831;
+}
+h1
+{
+	margin-bottom: 15px;
 }
