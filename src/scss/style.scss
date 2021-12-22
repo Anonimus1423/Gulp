@@ -1,11 +1,17 @@
+@import 'reset.scss';
+@import 'fonts.scss';
+
 // For cover page
 body 
 {
+	font-family: Montserrat;
 	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+    justify-content: center;
+    align-items: center;
 	color: #eee;
 	background-color: #222831;
 	text-align: center;
@@ -14,4 +20,12 @@ h1
 {
 	margin: 0px;
 	margin-bottom: 15px;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+}
+h2
+{
+	font-size: 26px;
+    text-align: center;
 }
