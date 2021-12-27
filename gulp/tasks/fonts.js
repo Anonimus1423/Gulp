@@ -86,7 +86,7 @@ export const fontsStyle = () => {
 			}
 		}
 	});
-	if (!fontsFile) 
+	if (!fs.existsSync(fontsFile)) 
 	{
 		fs.writeFile(fontsFile, '', cb);
 	}
