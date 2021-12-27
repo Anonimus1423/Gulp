@@ -1,6 +1,7 @@
 import fs from 'fs';
 import fonter from 'gulp-fonter';
 import ttf2woff2 from 'gulp-ttf2woff2';
+import del from "del";
 
 export const otfToTtf = () => {
 	// Ищем файлы шрифтов .otf
@@ -42,7 +43,7 @@ export const ttfToWoff = () => {
 }
 export const fontsStyle = () => {
 	// Файл стилей подключения шрифтов
-	let fontsFile = `${app.path.srcFolder}/scss/fonts.scss`;
+	let fontsFile = `${app.path.srcFolder}/scss/main_settings/fonts.scss`;
 	// Проверяем существуют ли файлы шрифтов
 	fs.readdir(app.path.build.fonts, function (err, fontsFiles) {
 		if (fontsFiles) {
@@ -83,6 +84,8 @@ export const fontsStyle = () => {
 			} else {
 				// Если файл есть, выводим сообщение
 				console.log("Файл scss/fonts.scss уже существует. Для обновления файла нужно его удалить!");
+				del(fontsFile);
+				fontsStyle();
 			}
 		}
 	});
