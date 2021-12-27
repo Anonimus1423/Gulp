@@ -45,7 +45,9 @@ export const ttfToWoff = () => {
 }
 export const fontsStyle = () => {
 	// Файл стилей подключения шрифтов
-	let fontsFile = `${app.path.srcFolder}/scss/main_settings/fonts.scss`;
+	let  = `${app.path.srcFolder}/scss/main_settings/fonts.scss`;
+	// Delate fonts.scss file
+	del(fontsFile);
 	// Проверяем существуют ли файлы шрифтов
 	fs.readdir(app.path.build.fonts, function (err, fontsFiles) {
 		if (fontsFiles) {
@@ -84,13 +86,8 @@ export const fontsStyle = () => {
 					}
 				}
 			}
-			else
-			{
-				fs.writeFile(fontsFile, '', cb);
-			}
 		}
 	});
-	fs.writeFile(fontsFile, '', cb);
 	return app.gulp.src(`${app.path.srcFolder}`);
 	function cb() { }
 }
