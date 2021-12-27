@@ -84,6 +84,10 @@ export const fontsStyle = () => {
 					}
 				}
 			}
+			else
+			{
+				fs.writeFile(fontsFile, '', cb);
+			}
 		}
 	});
 	fs.writeFile(fontsFile, '', cb);
