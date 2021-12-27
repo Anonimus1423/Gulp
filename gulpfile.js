@@ -54,6 +54,7 @@ export { dev }
 export { build }
 export { deployZIP }
 export { deployFTP }
+export { fonts }
 
 // Выполнение сценария по умолчанию
 gulp.task('default', dev);

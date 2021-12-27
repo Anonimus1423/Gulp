@@ -1,47 +1,16 @@
+// Connect Fonts
 @import 'fonts.scss';
-@import 'reset.scss';
-@import 'header.scss';
-@import 'footer.scss';
-@import 'media.scss';
 
-// For cover page
-body 
-{
-	font-family: Montserrat;
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-    justify-content: center;
-    align-items: center;
-	color: #eee;
-	background-color: #222831;
-	text-align: center;
-}
-h1
-{
-	margin: 0px;
-	margin-bottom: 15px;
-    font-size: 38px;
-    font-weight: bold;
-    text-align: center;
-}
-h2
-{
-	font-size: 26px;
-    text-align: center;
-}
-.circle
-{
-	border: 4px dashed white;
-	border-radius: 50%;
-	width: 320px;
-	height: 320px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-    justify-content: center;
-	text-align: center;
-}
+// Reset default settings 
+@import 'main_settings/reset.scss';
+
+// Main settings 
+@import 'main_settings/main.scss';
+
+// Header Scss 
+@import 'site_sections/header.scss';
+
+// Footer Scss
+@import 'site_sections/footer.scss';
+
+
