@@ -86,10 +86,7 @@ export const fontsStyle = () => {
 			}
 		}
 	});
-	if (!fs.existsSync(fontsFile)) 
-	{
-		fs.writeFile(fontsFile, '', cb);
-	}
+	fs.writeFile(fontsFile, '', cb);
 	return app.gulp.src(`${app.path.srcFolder}`);
 	function cb() { }
 }
