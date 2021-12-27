@@ -4,7 +4,7 @@ import ttf2woff2 from 'gulp-ttf2woff2';
 import del from "del";
 
 export const otfToTtf = () => {
-	// Delate fonts.scss files
+	// Delate fonts.scss file
 	del(`${app.path.srcFolder}/scss/main_settings/fonts.scss`);
 	// Ищем файлы шрифтов .otf
 	return app.gulp.src(`${app.path.srcFolder}/fonts/*.otf`, {})
@@ -83,12 +83,13 @@ export const fontsStyle = () => {
 						newFileOnly = fontFileName;
 					}
 				}
-			} else {
-				console.log("Файл scss/fonts.scss уже существует. Для обновления файла нужно его удалить!");
 			}
 		}
 	});
-	
+	if (!fontsFile) 
+	{
+		fs.writeFile(fontsFile, '', cb);
+	}
 	return app.gulp.src(`${app.path.srcFolder}`);
 	function cb() { }
 }
