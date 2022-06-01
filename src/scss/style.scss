@@ -1,6 +1,6 @@
 // Connect Fonts
 // !!! Open when use fonts !!!
-// @import 'main_settings/fonts.scss';
+@import 'main_settings/fonts.scss';
 
 // Import Settings  
 @import 'variables/settings.scss';
@@ -12,9 +12,6 @@
 @import 'main_settings/main.scss';
 
 // Header Scss 
-@import 'site_sections/header.scss';
-
-// Footer Scss
-@import 'site_sections/footer.scss';
+@import 'site_sections/header/index.scss';
 
 

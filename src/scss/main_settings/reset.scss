@@ -17,6 +17,7 @@ time, mark, audio, video {
   font-size: 100%;
   color: $_mainTextColor;
   font: inherit;
+  font-family: Montserratarm;
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -31,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   min-height: 100vh;
+  background-color: $_backgroundColor;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
 }
