@@ -6,7 +6,7 @@ import htmlbeautify  from "gulp-html-beautify";
 // import htmlmin from "gulp-htmlmin";
 //import pug from "gulp-pug";
 
-export const html = () => {
+export const html = () => {covakal isakov 11/1
 	return app.gulp.src(app.path.src.html)
 		.pipe(app.plugins.plumber(
 			app.plugins.notify.onError({
