@@ -40,7 +40,10 @@ export const html = () => {
 			)
 		)
 		.pipe(
-			webpHtmlNosvg()
+			app.plugins.if(
+				app.isBuild,
+				webpHtmlNosvg()
+			)
 		)
 		.pipe(
 			app.plugins.if(
