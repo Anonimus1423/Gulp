@@ -6,7 +6,7 @@ import htmlbeautify  from "gulp-html-beautify";
 // import htmlmin from "gulp-htmlmin";
 //import pug from "gulp-pug";
 
-export const html = () => {covakal isakov 11/1
+export const html = () => {
 	return app.gulp.src(app.path.src.html)
 		.pipe(app.plugins.plumber(
 			app.plugins.notify.onError({
@@ -40,10 +40,7 @@ export const html = () => {covakal isakov 11/1
 			)
 		)
 		.pipe(
-			app.plugins.if(
-				app.isBuild,
-				webpHtmlNosvg()
-			)
+			webpHtmlNosvg()
 		)
 		.pipe(
 			app.plugins.if(
