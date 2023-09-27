@@ -14,8 +14,10 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: Montserrat !important;
   font-size: 100%;
-  color: $_mainTextColor;
+  font-weight: 500 !important;
+  color: black;
   font: inherit;
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
@@ -47,6 +49,7 @@ select {
   font: inherit;
   outline: none !important;
   border: none;
+  font-family: Montserrat;
 }
 
 a:not([class]) {

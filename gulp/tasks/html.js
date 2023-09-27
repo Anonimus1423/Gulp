@@ -3,7 +3,7 @@ import webpHtmlNosvg from "gulp-webp-html-nosvg";
 import versionNumber from "gulp-version-number";
 import htmlbeautify  from "gulp-html-beautify";
 // For HTML Minificator
-// import htmlmin from "gulp-htmlmin";
+import htmlmin from "gulp-htmlmin";
 //import pug from "gulp-pug";
 
 export const html = () => {
@@ -32,7 +32,6 @@ export const html = () => {
 		// 	)
 		// )
 		
-		// Beautify HTML
 		.pipe(
 			app.plugins.if(
 				app.isBuild,
